@@ -26,7 +26,7 @@ namespace ContosFS
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -34,22 +34,22 @@ namespace ContosFS
             services.AddControllers();
             services.AddControllers();
             services.AddDbContext<UserDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB1"]));
 
-            services.AddDbContext<StockDbContext>(options =>
+           /*services.AddDbContext<StockDbContext>(options =>
             options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
             services.AddDbContext<HoldingsDbContext>(options =>
             options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
             services.AddDbContext<TransactionsDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));*/
 
 
             services.AddScoped<UserRepository>();
-            services.AddScoped<StockRepository>();
+           /* services.AddScoped<StockRepository>();
             services.AddScoped<TransactionsRepository>();
-            services.AddScoped<HoldingsRepository>();
+            services.AddScoped<HoldingsRepository>();*/
 
             // GraphQL
             // GOTO: https://localhost:5001/ui/playground

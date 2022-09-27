@@ -16,20 +16,20 @@ namespace ContosFS.Data
         public DbSet<UserEntity> UserEntities { get; set; }
     }
 
-    public class StockDbContext : DbContext
+  /*  public class StockDbContext : DbContext
     {
         public StockDbContext(DbContextOptions<StockDbContext> options) : base(options)
         {
             this.Database.EnsureCreated();
         }
         public DbSet<StockEntity> StockEntities { get; set; }
-    }
+    }*/
 //<<<<<<< HEAD
 
 //=======
     
 //>>>>>>> b533f8080dec42cca355230ee8fe0b998c243ecd
-    public class HoldingsDbContext : DbContext
+   /* public class HoldingsDbContext : DbContext
     {
         public HoldingsDbContext(DbContextOptions<HoldingsDbContext> options) : base(options)
         {
@@ -45,5 +45,5 @@ namespace ContosFS.Data
             this.Database.EnsureCreated();
         }
         public DbSet<TransactionsEntity> TransactionsEntities { get; set; }
-    }
+   */ //}
 }

@@ -23,7 +23,7 @@ namespace ContosFS.Repository
         }
     }
 
-    public class StockRepository
+    /*public class StockRepository
     {
         public StockDbContext _StockDbContext;
         public IEnumerable<StockEntity> StockEntities { get; set; }
@@ -54,5 +54,5 @@ namespace ContosFS.Repository
         {
             _TransactionsDbContext = dbContext;
         }
-    }
+    }*/
 }

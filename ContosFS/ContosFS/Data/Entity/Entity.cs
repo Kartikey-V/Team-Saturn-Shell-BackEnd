@@ -20,7 +20,7 @@ namespace ContosFS.Data.Entity
 		[StringLength(50)]
 		public String UserPassword;
 	}
-	public class AssetEntity
+	public class StockEntity
     {
 		[Key]
 		public String StockId;

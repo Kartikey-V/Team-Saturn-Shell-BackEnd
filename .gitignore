@@ -132,3 +132,7 @@ $RECYCLE.BIN/
 
 _NCrunch*
 *.cache
+*.json
+*.sqlite
+*.v2
+*.cache

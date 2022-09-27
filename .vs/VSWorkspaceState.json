@@ -3,7 +3,9 @@
     "",
     "\\ContosFS",
     "\\ContosFS\\ContosFS",
-    "\\ContosFS\\ContosFS\\Data"
+    "\\ContosFS\\ContosFS\\Data",
+    "\\ContosFS\\ContosFS\\Data\\GraphQL",
+    "\\ContosFS\\ContosFS\\Repository"
   ],
   "SelectedNode": "\\ContosFS\\ContosFS.sln",
   "PreviewInSolutionExplorer": false

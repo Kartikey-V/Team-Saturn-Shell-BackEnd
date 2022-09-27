@@ -30,4 +30,26 @@ namespace ContosFS.Data.Entity
 
 		public float CurStockPrice;
 	}
+	
+	public class HoldingsEntity
+	{
+		[Key, Column(Order = 0)]
+		public int StockId;
+		[Key, Column(Order = 1)]
+		public int UserId;
+		public int Quantity;
+		public float Buying_price;
+		public DateTime Date;
+
+	}
+
+	public class TransactionsEntity
+    {
+		public int UserId;
+		public int StockId;
+		public string Type;
+		public int Quantity;
+		public float Price;
+		public DateTime Date;
+    }
 }

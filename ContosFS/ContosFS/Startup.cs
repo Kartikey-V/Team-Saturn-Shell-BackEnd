@@ -34,21 +34,21 @@ namespace ContosFS
             services.AddControllers();
             services.AddControllers();
             services.AddDbContext<UserDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
-            services.AddDbContext<AssetDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+            services.AddDbContext<StockDbContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
             services.AddDbContext<HoldingsDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
             services.AddDbContext<TransactionsDbContext>(options =>
-            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+            options.UseSqlServer(Configuration["ConnectionStrings:FuelDB"]));
 
 
             services.AddScoped<UserRepository>();
-            //services.AddScoped<AssetsRepository>();
-            //services.AddScoped<UserRepository>();
+            services.AddScoped<StockRepository>();
+            services.AddScoped<TransactionsRepository>();
             services.AddScoped<HoldingsRepository>();
 
             // GraphQL

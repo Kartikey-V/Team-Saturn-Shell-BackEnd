@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,7 +13,7 @@ namespace ContosFS.Data.Entity
 		public int UserId;
 
 		[StringLength(50)]
-		public String UserName;
+		public String UserName {get; set;}
 
 		[StringLength(50)]
 		public String UserEmail;
@@ -23,14 +24,14 @@ namespace ContosFS.Data.Entity
 	public class StockEntity
     {
 		[Key]
-		public String StockId;
+		public int StockId;
 
 		[StringLength(50)]
 		public String StockName;
 
 		public float CurStockPrice;
 	}
-	
+
 	public class HoldingsEntity
 	{
 		[Key, Column(Order = 0)]

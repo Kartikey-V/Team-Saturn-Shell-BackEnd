@@ -16,6 +16,11 @@ namespace ContosFS.Repository
         {
             _UserDbContext = dbContext;
         }
+
+         public IEnumerable<UserEntity> GetUser()
+        {
+            return _UserDbContext.UserEntities;
+        }
     }
 
     public class StockRepository

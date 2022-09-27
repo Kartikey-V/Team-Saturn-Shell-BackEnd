@@ -24,7 +24,11 @@ namespace ContosFS.Data
         }
         public DbSet<StockEntity> StockEntities { get; set; }
     }
+//<<<<<<< HEAD
+
+//=======
     
+//>>>>>>> b533f8080dec42cca355230ee8fe0b998c243ecd
     public class HoldingsDbContext : DbContext
     {
         public HoldingsDbContext(DbContextOptions<HoldingsDbContext> options) : base(options)

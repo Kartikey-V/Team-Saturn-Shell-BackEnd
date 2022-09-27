@@ -31,7 +31,11 @@ namespace ContosFS.Data.Entity
 
 		public float CurStockPrice;
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> b533f8080dec42cca355230ee8fe0b998c243ecd
 	public class HoldingsEntity
 	{
 		[Key, Column(Order = 0)]

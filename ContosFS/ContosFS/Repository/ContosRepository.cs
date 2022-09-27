@@ -17,4 +17,37 @@ namespace ContosFS.Repository
             _UserDbContext = dbContext;
         }
     }
+
+    public class StockRepository
+    {
+        public StockDbContext _StockDbContext;
+        public IEnumerable<StockEntity> StockEntities { get; set; }
+
+        public StockRepository(StockDbContext dbContext)
+        {
+            _StockDbContext = dbContext;
+        }
+    }
+    
+    public class HoldingsRepository
+    {
+        public HoldingsDbContext _HoldingsDbContext;
+        public IEnumerable<HoldingsEntity> HoldingsEntities { get; set; }
+
+        public HoldingsRepository(HoldingsDbContext dbContext)
+        {
+            _HoldingsDbContext = dbContext;
+        }
+    }
+
+    public class TransactionsRepository
+    {
+        public TransactionsDbContext _TransactionsDbContext;
+        public IEnumerable<TransactionsEntity> TransactionsEntities { get; set; }
+
+        public TransactionsRepository(TransactionsDbContext dbContext)
+        {
+            _TransactionsDbContext = dbContext;
+        }
+    }
 }

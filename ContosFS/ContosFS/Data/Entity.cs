@@ -13,7 +13,7 @@ namespace ContosFS.Data.Entity
 		public int UserId;
 
 		[StringLength(50)]
-		public String UserName;
+		public String UserName {get; set;}
 
 		[StringLength(50)]
 		public String UserEmail;
@@ -31,11 +31,7 @@ namespace ContosFS.Data.Entity
 
 		public float CurStockPrice;
 	}
-//<<<<<<< HEAD
 
-//=======
-	
-//>>>>>>> b533f8080dec42cca355230ee8fe0b998c243ecd
 	public class HoldingsEntity
 	{
 		[Key, Column(Order = 0)]

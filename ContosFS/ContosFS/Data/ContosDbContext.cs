@@ -16,12 +16,30 @@ namespace ContosFS.Data
         public DbSet<UserEntity> UserEntities { get; set; }
     }
 
-    public class AssetDbContext : DbContext
+    public class StockDbContext : DbContext
     {
-        public AssetDbContext(DbContextOptions<AssetDbContext> options) : base(options)
+        public StockDbContext(DbContextOptions<StockDbContext> options) : base(options)
         {
             this.Database.EnsureCreated();
         }
-        public DbSet<AssetEntity> AssetEntities { get; set; }
+        public DbSet<StockEntity> StockEntities { get; set; }
+    }
+
+    public class HoldingsDbContext : DbContext
+    {
+        public HoldingsDbContext(DbContextOptions<HoldingsDbContext> options) : base(options)
+        {
+            this.Database.EnsureCreated();
+        }
+        public DbSet<HoldingsEntity> HoldingsEntities { get; set; }
+    }
+
+    public class TransactionsDbContext : DbContext
+    {
+        public TransactionsDbContext(DbContextOptions<TransactionsDbContext> options) : base(options)
+        {
+            this.Database.EnsureCreated();
+        }
+        public DbSet<TransactionsEntity> TransactionsEntities { get; set; }
     }
 }

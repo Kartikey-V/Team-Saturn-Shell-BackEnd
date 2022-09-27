@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {}
+    "C:\\Users\\Shloka.Vidi\\Source\\Repos\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {
+    "C:\\Users\\Shloka.Vidi\\Source\\Repos\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
+        "projectUniqueName": "C:\\Users\\Shloka.Vidi\\Source\\Repos\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
         "projectName": "ContosFS",
-        "projectPath": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
-        "packagesPath": "C:\\Users\\Kartikey Vashisht\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\obj\\",
+        "projectPath": "C:\\Users\\Shloka.Vidi\\Source\\Repos\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
+        "packagesPath": "C:\\Users\\Shloka.Vidi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shloka.Vidi\\Source\\Repos\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kartikey Vashisht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shloka.Vidi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

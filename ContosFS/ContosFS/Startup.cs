@@ -1,7 +1,13 @@
+using ContosFS.Data;
+using ContosFS.Data.GraphQL;
+using ContosFS.Repository;
+using GraphQL;
+using GraphQL.Server;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,26 +32,70 @@ namespace ContosFS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddControllers();
+            services.AddDbContext<UserDbContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+
+            services.AddDbContext<AssetDbContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+
+            services.AddDbContext<HoldingsDbContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+
+            services.AddDbContext<TransactionsDbContext>(options =>
+            options.UseSqlServer(Configuration["ConnectionStrings:Fuel"]));
+
+
+            services.AddScoped<UserRepository>();
+            //services.AddScoped<AssetsRepository>();
+            //services.AddScoped<UserRepository>();
+            services.AddScoped<HoldingsRepository>();
+
+            // GraphQL
+            // GOTO: https://localhost:5001/ui/playground
+            services.AddScoped<ContosSchema>();
+
+            services.AddScoped<IServiceProvider>(s =>
+                new FuncServiceProvider(s.GetRequiredService));
+
+            services.AddGraphQL()
+                .AddSystemTextJson()
+                .AddGraphTypes(ServiceLifetime.Scoped);
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
 
-            app.UseHttpsRedirection();
-
+            app.UseGraphQL<ContosSchema>();
+            app.UseGraphQLPlayground();
             app.UseRouting();
+            app.UseCors();
 
-            app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+
+            //app.UseHttpsRedirection();
+
+            //app.UseRouting();
+
+            //app.UseAuthorization();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
         }
     }
 }

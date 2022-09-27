@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,14 +24,18 @@ namespace ContosFS.Data.Entity
 	public class StockEntity
     {
 		[Key]
-		public String StockId;
+		public int StockId;
 
 		[StringLength(50)]
 		public String StockName;
 
 		public float CurStockPrice;
 	}
+<<<<<<< HEAD
+
+=======
 	
+>>>>>>> b533f8080dec42cca355230ee8fe0b998c243ecd
 	public class HoldingsEntity
 	{
 		[Key, Column(Order = 0)]

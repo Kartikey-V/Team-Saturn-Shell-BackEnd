@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ContosFS",
+    "\\ContosFS\\ContosFS",
+    "\\ContosFS\\ContosFS\\Data"
   ],
-  "SelectedNode": "\\C:\\Users\\tezz-io\\Source\\Repos\\Team-Saturn-Shell-BackEnd",
+  "SelectedNode": "\\ContosFS\\ContosFS.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tezz-io\\source\\repos\\ContosFS\\ContosFS\\ContosFS.csproj": {}
+    "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tezz-io\\source\\repos\\ContosFS\\ContosFS\\ContosFS.csproj": {
+    "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tezz-io\\source\\repos\\ContosFS\\ContosFS\\ContosFS.csproj",
+        "projectUniqueName": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
         "projectName": "ContosFS",
-        "projectPath": "C:\\Users\\tezz-io\\source\\repos\\ContosFS\\ContosFS\\ContosFS.csproj",
-        "packagesPath": "C:\\Users\\tezz-io\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tezz-io\\source\\repos\\ContosFS\\ContosFS\\obj\\",
+        "projectPath": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\ContosFS.csproj",
+        "packagesPath": "C:\\Users\\Kartikey Vashisht\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kartikey Vashisht\\OneDrive\\Documents\\Team-Saturn-Shell-BackEnd\\ContosFS\\ContosFS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tezz-io\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kartikey Vashisht\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
